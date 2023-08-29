@@ -6,6 +6,12 @@
     margin: 0;
 }
 
+button {
+    border-style: none;
+    background-color: transparent;
+    outline: none;
+}
+
 /* BODY STYLE */
 
 body {
@@ -20,6 +26,7 @@ body {
     font-weight: bold;
     background-color: #ffffff;
     padding: 8px 0 8px 20px;
+    margin-bottom: 50px;
 }
 
 .logo {
@@ -27,3 +34,55 @@ body {
 }
 
 /* MAIN STYLE */
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 5px;
+    padding: 12px 50px;
+    margin-bottom: 2px;
+}
+
+.todolist-header button {
+    font-size: 12px;
+    padding: 6px 12px;
+}
+
+.add-task {
+    background-color: #47ADF1;
+    color: white;
+}
+
+.add-section {
+    border: 1px solid #dddddd;
+    color: #bebebe;
+}
+
+.todolist-body {
+    font-size: 18px;
+}
+
+.todolist-body strong {
+    font-size: 22px;
+}
+
+.todolist-body li {
+    margin: 14px 0;
+    list-style: none;
+}
+
+.todolist-body div {
+    margin-bottom: 25px;
+}
+
+.item-category {
+    color: white;
+    font-size: 10px;
+    line-height: 20px;
+    display: inline-block;
+    background-color: #435b5c;
+    border-radius: 10px;
+    padding: 0 10px;
+}
+
