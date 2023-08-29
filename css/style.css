@@ -1,7 +1,29 @@
-/* REST RULES */
+/* RESET RULES */
 
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
+
+/* BODY STYLE */
+
+body {
+    background-color: #F6F8F9;
+    font-family: sans-serif; /* sans-serif for now until a proper font is chosen */
+}
+
+/* HEADER STYLE */
+
+.main-header {
+    font-size: 36px;
+    font-weight: bold;
+    background-color: #ffffff;
+    padding: 8px 0 8px;
+}
+
+.logo {
+    vertical-align: middle;
+}
+
+/* MAIN STYLE */
