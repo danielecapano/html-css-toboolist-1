@@ -36,7 +36,7 @@ body {
 /* MAIN STYLE */
 
 .container {
-    max-width: 960px;
+    max-width: 80%;
     margin: 0 auto;
     background-color: white;
     border-radius: 5px;
@@ -69,7 +69,7 @@ body {
 }
 
 .todolist-body li {
-    margin: 14px 0;
+    margin: 20px 0;
     list-style: none;
 }
 
@@ -77,6 +77,8 @@ body {
     margin-bottom: 25px;
 }
 
+/* ITEM CATEGORY STYLES */
+ 
 .item-category {
     color: white;
     font-size: 10px;
@@ -85,5 +87,55 @@ body {
     background-color: #435b5c;
     border-radius: 10px;
     padding: 0 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.editorial {
+    background-color: #47ADF1;
+}
+
+.q1-goals {
+    background-color: #9C72E4;
+}
+
+.recruiting {
+    background-color: #64C0A9;
+}
+
+.mobile {
+    background-color: #F29E33;
+}
+
+.website {
+    background-color: #D863A0;
+}
+
+.sales {
+    background-color: #B0C926;
+}
+
+
+/* LIST STYLES */
+
+.bullet-type {
+    display: inline-block;
+    font-size: 12px;
+    margin-right: 5px;
+    line-height: 18px;
+    border: 1px solid;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.item-complete {
+    color: green;
+}
+
+.item-incomplete {
+    color: red;
 }
 
