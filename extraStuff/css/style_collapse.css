@@ -1,0 +1,156 @@
+/* RESET RULES */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    border-style: none;
+    background-color: transparent;
+    outline: none;
+}
+
+/* BODY STYLE */
+
+body {
+    background-color: #F6F8F9;
+    font-family: sans-serif; /* sans-serif for now until a proper font is chosen */
+}
+
+/* HEADER STYLE */
+
+.main-header {
+    font-size: 36px;
+    font-weight: bold;
+    background-color: #ffffff;
+    padding: 8px 0 8px 20px;
+    margin-bottom: 50px;
+}
+
+.logo {
+    vertical-align: middle;
+}
+
+/* MAIN STYLE */
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 5px;
+    padding: 12px 50px;
+    margin-bottom: 2px;
+}
+
+.todolist-header button {
+    font-size: 12px;
+    padding: 6px 12px;
+    border-radius: 5px;
+}
+
+.add-task {
+    background-color: #47ADF1;
+    color: white;
+}
+
+.add-section {
+    border: 1px solid #dddddd;
+    color: #bebebe;
+}
+
+.todolist-body {
+    font-size: 18px;
+}
+
+.todolist-body strong {
+    font-size: 22px;
+}
+
+.todolist-body li {
+    margin: 20px 0;
+    list-style: none;
+}
+
+.todolist-body div {
+    margin-bottom: 25px;
+}
+
+/* ITEM CATEGORY STYLES */
+ 
+.item-category {
+    color: white;
+    font-size: 10px;
+    line-height: 20px;
+    display: inline-block;
+    background-color: #435b5c;
+    border-radius: 10px;
+    padding: 0 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.editorial {
+    background-color: #47ADF1;
+}
+
+.q1-goals {
+    background-color: #9C72E4;
+}
+
+.recruiting {
+    background-color: #64C0A9;
+}
+
+.mobile {
+    background-color: #F29E33;
+}
+
+.website {
+    background-color: #D863A0;
+}
+
+.sales {
+    background-color: #B0C926;
+}
+
+
+/* LIST STYLES */
+
+.bullet-type {
+    display: inline-block;
+    font-size: 12px;
+    margin-right: 5px;
+    line-height: 18px;
+    border: 1px solid;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.item-complete {
+    color: green;
+}
+
+.item-incomplete {
+    color: red;
+}
+
+
+/* COLLAPSE TEST */
+
+.tog-new-task + .new-task {
+    max-height: 100px;
+    opacity: 1;
+
+}
+
+.tog-new-task:checked + .new-task {
+    max-height: 0;
+    opacity: 0;
+    transition: opacity 0.5;
+
+}

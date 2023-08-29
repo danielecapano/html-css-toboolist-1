@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TobooList</title>
+    <link rel="stylesheet" href="./css/style_collapse.css">
+</head>
+<body>
+
+    <!-- Page Header with Logo here -->
+    <header class="main-header">
+        <img class="logo" src="./img/Logo.png" alt="logoBoolean">
+        Toboolist
+    </header>
+
+    <!-- Main TodoList here, if possible will make collapsable -->
+    <main>
+        <div class="container"> <!-- Container will be used for shaping main -->            
+            <div class="todolist-header">
+                <button class="add-task">Add Task</button> 
+                <button class="add-section">Add Section</button>  
+            </div>
+        </div>  
+
+        <div class="container">
+                <div class="todolist-body">
+
+                    <input type="checkbox" class="tog-new-task" id="check-new-task">
+                    <!-- <label for="check-new-task" class="tog-new-task">NEW TASK</label> -->
+
+
+                    <div class="new-task">
+                        <ul>
+                            <li>
+                                <strong>&#9207;New Task</strong>
+                                <ul>
+                                    <li><span class="bullet-type item-complete">&#x2713;</span> Quarterly Newsletter <span class="item-category editorial">Editorial</span></li>
+                                </ul>   
+                            </li>                         
+                        </ul>
+                    </div>
+
+                    <div class="today">
+                        <ul>
+                            <li>
+                                <strong>&#9207;Today</strong>
+                                <ul>
+                                    <li><span class="bullet-type item-complete">&#x2713;</span> Recruiting blog post <span class="item-category editorial">Editorial</span></li>
+                                    <li><span class="bullet-type item-complete">&#x2713;</span> Mobile app launch <span class="item-category q1-goals">Q1 Goals</span></li>
+                                    <li><span class="bullet-type item-incomplete">&#x2717;</span> Interview John H. <span class="item-category recruiting">Recruiting</span></li>
+                                    <li><span class="bullet-type item-complete">&#x2713;</span> Summit update to mobile storefronts <span class="item-category mobile">Mobile</span></li>
+                                </ul>
+                            </li>
+                        </ul>                        
+                    </div>
+
+                    <div class="upcoming">
+                        <ul>
+                            <li>
+                                <strong>&#9207;Upcoming</strong>
+                                <ul>
+                                    <li><span class="bullet-type item-incomplete">&#x2717;</span> Schedule meeting with Alex </li>
+                                    <li><span class="bullet-type item-complete">&#x2713;</span> Homepage refresh <span class="item-category website">Website</span></li>
+                                    <li><span class="bullet-type item-complete">&#x2713;</span> Onboard new Sales team members <span class="item-category sales">Sales</span></li>
+                                    <li><span class="bullet-type item-complete">&#x2713;</span> Review editorial calendar <span class="item-category editorial">Editorial</span></li>
+                                </ul>
+                            </li>
+                        </ul>                        
+                    </div>
+
+
+                </div>
+            </div>
+
+        
+
+
+    </main>
+    
+</body>
+</html>
