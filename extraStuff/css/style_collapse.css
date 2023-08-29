@@ -68,14 +68,18 @@ body {
     font-size: 22px;
 }
 
+.todolist-body ul {
+    margin-bottom: 40px;
+}
+
 .todolist-body li {
     margin: 20px 0;
     list-style: none;
 }
 
-.todolist-body div {
-    margin-bottom: 25px;
-}
+
+
+
 
 /* ITEM CATEGORY STYLES */
  
@@ -142,15 +146,86 @@ body {
 
 /* COLLAPSE TEST */
 
-.tog-new-task + .new-task {
-    max-height: 100px;
-    opacity: 1;
+/* NEW TASK SECTION */
 
+#new-task-toggle {
+    display: none;
 }
 
-.tog-new-task:checked + .new-task {
-    max-height: 0;
-    opacity: 0;
-    transition: opacity 0.5;
+#new-task-label {
+    cursor: pointer;
+}
 
+.new-task {
+    opacity: 1;
+    max-height: 100vh;
+    transition-property: opacity, max-height;
+    transition-duration: 0.3s, 0.3s;
+    transition-timing-function: ease-in-out, ease-in-out;
+    transition-delay: 0.1s, 0s;
+}
+
+#new-task-toggle:checked  ~ .new-task {
+    opacity: 0;
+    max-height: 0vh;
+    transition-property: opacity, max-height;
+    transition-duration: 0.3s, 0.3s;
+    transition-timing-function: ease-in-out, ease-in-out;
+    transition-delay: 0s, 0.1s;
+}
+
+/* TODAY SECTION */
+
+#today-toggle {
+    display: none;
+}
+
+#today-label {
+    cursor: pointer;
+}
+
+.today {
+    opacity: 1;
+    max-height: 100vh;
+    transition-property: opacity, max-height;
+    transition-duration: 0.3s, 0.3s;
+    transition-timing-function: ease-in-out, ease-in-out;
+    transition-delay: 0.1s, 0s;
+}
+
+#today-toggle:checked  ~ .today {
+    opacity: 0;
+    max-height: 0vh;
+    transition-property: opacity, max-height;
+    transition-duration: 0.3s, 0.3s;
+    transition-timing-function: ease-in-out, ease-in-out;
+    transition-delay: 0s, 0.1s;
+}
+
+/* UPCOMING SECTION */
+
+#upcoming-toggle {
+    display: none;
+}
+
+#upcoming-label {
+    cursor: pointer;
+}
+
+.upcoming {
+    opacity: 1;
+    max-height: 100vh;
+    transition-property: opacity, max-height;
+    transition-duration: 0.3s, 0.3s;
+    transition-timing-function: ease-in-out, ease-in-out;
+    transition-delay: 0.1s, 0s;
+}
+
+#upcoming-toggle:checked  ~ .upcoming {
+    opacity: 0;
+    max-height: 0vh;
+    transition-property: opacity, max-height;
+    transition-duration: 0.3s, 0.3s;
+    transition-timing-function: ease-in-out, ease-in-out;
+    transition-delay: 0s, 0.1s;
 }
