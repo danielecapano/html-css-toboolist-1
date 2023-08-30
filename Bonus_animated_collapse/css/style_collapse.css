@@ -44,6 +44,14 @@ body {
     margin-bottom: 2px;
 }
 
+.todolist-header .container {
+    border-radius: 5px 5px 0 0;
+}
+
+.todolist-body .container {
+    border-radius: 0 0 5px 5px;
+}
+
 .todolist-header button {
     font-size: 12px;
     padding: 6px 12px;
