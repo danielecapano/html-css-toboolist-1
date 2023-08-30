@@ -76,13 +76,13 @@ body {
     font-size: 22px;
 }
 
+.todolist-body ul {
+    margin-bottom: 40px;
+}
+
 .todolist-body li {
     margin: 20px 0;
     list-style: none;
-}
-
-.todolist-body div {
-    margin-bottom: 25px;
 }
 
 /* ITEM CATEGORY STYLES */
