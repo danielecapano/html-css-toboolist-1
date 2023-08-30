@@ -12,6 +12,10 @@ button {
     outline: none;
 }
 
+ul, li, menu {
+    list-style: none;
+}
+
 /* BODY STYLE */
 
 body {
@@ -19,7 +23,7 @@ body {
     font-family: sans-serif; /* sans-serif for now until a proper font is chosen */
 }
 
-/* HEADER STYLE */
+/* PAGE HEADER STYLE */
 
 .main-header {
     font-size: 36px;
@@ -35,59 +39,79 @@ body {
 
 /* MAIN STYLE */
 
+.main-card {
+    padding-inline: 25px;
+}
+
 .container {
-    max-width: 80%; /* BAD - better to use pixels with padding */
+    max-width: 600px;
     margin: 0 auto;
+    padding-block: 25px;
     background-color: white;
     border-radius: 5px;
-    padding: 12px 50px;
-    margin-bottom: 2px;
 }
 
-.todolist-header .container {
-    border-radius: 5px 5px 0 0;
+.todolist-header, .todolist-body {
+    padding-inline: 40px;
 }
 
-.todolist-body .container {
-    border-radius: 0 0 5px 5px;
-}
+/* BUTTON STYLING */
 
-.todolist-header button {
+.btn {
     font-size: 12px;
     padding: 6px 12px;
     border-radius: 5px;
 }
 
-.add-task {
+.btn-default {
     background-color: #47ADF1;
     color: white;
 }
 
-.add-section {
+.btn-alternate {
     border: 1px solid #dddddd;
     color: #bebebe;
 }
 
-.todolist-body {
-    font-size: 18px;
+
+/* TODOLIST HEADER STYLE */
+
+.todolist-header {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #F6F8F9;
 }
 
-.todolist-body strong {
+/* TODOLIST BODY STYLE */
+
+.todolist-body {
+}
+
+.list-title-arrow, .list-title {
+    display: inline-block;
+}
+
+.list-title-arrow {
+    font-size: 28px;
+    color: #474747;
+}
+
+.todolist-body .list-title {
     font-size: 22px;
 }
 
-.todolist-body ul {
-    margin-bottom: 40px;
+.todolist-body li {
+    font-size: 18px;
+    margin-block: 20px;
 }
 
-.todolist-body li {
-    margin: 20px 0;
-    list-style: none;
+.todolist-body li:last-child {
+    margin-bottom: 40px;
 }
 
 /* ITEM CATEGORY STYLES */
  
-.item-category {
+.list-tag {
     color: white;
     font-size: 10px;
     line-height: 20px;
@@ -99,27 +123,27 @@ body {
     vertical-align: middle;
 }
 
-.editorial {
+.list-tag-blue {
     background-color: #47ADF1;
 }
 
-.q1-goals {
+.list-tag-purple {
     background-color: #9C72E4;
 }
 
-.recruiting {
+.list-tag-turquoise {
     background-color: #64C0A9;
 }
 
-.mobile {
+.list-tag-orange {
     background-color: #F29E33;
 }
 
-.website {
+.list-tag-pink {
     background-color: #D863A0;
 }
 
-.sales {
+.list-tag-green {
     background-color: #B0C926;
 }
 
@@ -147,3 +171,30 @@ body {
     color: red;
 }
 
+
+/* COLLAPSABLE LISTS */
+
+.checkstyle {
+    display: inline-block;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    background-color: #9C72E4;
+}
+
+.collapsable {
+    opacity: 1;
+    max-height: 100vh;
+    transition-property: opacity, max-height;
+    transition-duration: 300ms, 800ms;
+    transition-delay: 200ms, 0ms;
+    
+}
+
+.collapse-toggle:checked + .collapsable {
+    opacity: 0;
+    max-height: 0;
+    transition-property: opacity, max-height;
+    transition-duration: 300ms, 300ms;
+    transition-delay: 0ms, 0ms;
+}
