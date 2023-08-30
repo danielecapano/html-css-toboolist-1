@@ -36,7 +36,7 @@ body {
 /* MAIN STYLE */
 
 .container {
-    max-width: 80%;
+    max-width: 80%; /* BAD - better to use pixels with padding */
     margin: 0 auto;
     background-color: white;
     border-radius: 5px;
